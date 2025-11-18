@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Adventure Awaits!</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!--Concept, 80's style Apple IIe terminal green pixel text on black background, or Fallout pipboy, grid map on side to show relative location-->
+        <!--Would want mainly 3 sections, text display, grid map, text entry field-->
+        <!--Cut back a LOOOOT on features, went with the simple text interface, wanted to do a bunch of features like if the torch wasn't equiped user died in darkness, and needed the business card to get help of defence attorney-->
+        <div id="game-container">
+            <div id="output"></div>
+                <div id="start-container">
+                    <button onclick="startGame()">Start Game</button>
+                </div>
+            <div id="input-container">
+                <input type="text" id="command-input" placeholder="Type your command here..." autocomplete="off">
+                <button id="submit-btn" onclick="submitCommand()">Enter</button>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script> <!--./lodash.js-->
+        <script src = "./app.js"></script>
+    </body>
+    
+
+    
+</html>
+
+
+
+<!-- Text based adventure game
+
+Objective: In this assignment, you will create an interactive text-based adventure game using JavaScript structures, objects, classes, and a popular library called 'lodash'. This game will challenge your understanding of JavaScript objects, classes, and libraries, as well as your creativity. 
+
+Scenario: Your game will be set in a mysterious land called "Scriptoria" that is inhabited by various characters and creatures. Players will be able to navigate the world, interact with characters, collect items, and complete quests to unravel the secrets of Scriptoria. 
+
+Requirements: 
+
+
+    Use the lodash library to help manage your game data, such as filtering, sorting, or searching through your arrays of characters, items, and locations. 
+
+    Create a minimum of 3 characters, 3 items, and 3 locations. Connect the locations to each other in a way that creates an interesting game world. 
+
+    Implement a basic user interface using the browser's prompt and alert functions to allow players to input commands and receive feedback. For example, players can input "move north", "search", "pick up sword", or "attack goblin". 
+
+    Create a simple game loop that allows players to input commands and see the results of their actions until they reach an endgame scenario (e.g., discovering a hidden treasure or defeating a boss monster). 
+
+    Make use of JavaScript objects and classes for all game components, and ensure proper encapsulation and interaction between objects. 
+
+Bonus: Create a more advanced user interface using DOM manipulation or a front-end library like React or Vue to enhance the player experience. 
+
+Submission: Submit your HTML, JavaScript, and any additional files, along with a brief readme file explaining your game's story, gameplay mechanics, and instructions for playing. Include screenshots or a video walkthrough to showcase your game's features.  -->
